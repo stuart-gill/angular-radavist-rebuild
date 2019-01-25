@@ -5,23 +5,38 @@
 
 <!--Main Router Blockk-->
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">The Radavist</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="about">About</a></li>
-      <li><a routerLink="radar">Radar</a></li>
-      <li><a routerLink="reportage">Reportage</a></li>
-      <li><a routerLink="shop">Shop</a></li>
-      <li><a routerLink="video">Videos</a></li>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" routerLink="">
+    <img id="logo" alt="Logo" src="img/radavist.png" />
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a routerLink="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="radar">Radar</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="reportage">Reportage</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="shop">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="videos">Videos</a>
+      </li>
     </ul>
+
+    <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
   </div>
 </nav>
 
 <div class="container">
   <h1>{{ title }}</h1>
-  >
   <router-outlet></router-outlet>
 </div>
