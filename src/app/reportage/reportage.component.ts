@@ -33,7 +33,7 @@ export class ReportageComponent implements OnInit {
   ];
 
   goToDetailPage(clickedReport: Report) {
-    this.router.navigate(["reports", clickedReport.id]);
+    this.router.navigate(["reportage", clickedReport.id]);
   }
 
   ngOnInit() {}
