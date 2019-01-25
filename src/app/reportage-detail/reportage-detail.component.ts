@@ -1,4 +1,7 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Params } from "@angular/router";
+import { Location } from "@angular/common";
+import { Report } from "../report.model";
 
 @Component({
   selector: "app-reportage-detail",
@@ -6,7 +9,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./reportage-detail.component.css"]
 })
 export class ReportageDetailComponent implements OnInit {
-  constructor() {}
+  reportId: number = null;
 
-  ngOnInit() {}
+  constructor(private route: ActivatedRoute, private location: Location) {}
+
+  ngOnInit() {
+    this.route.params.forEach(urlParameters => {
+      this.reportId = parseInt(urlParameters["id"]);
+    });
+  }
 }
