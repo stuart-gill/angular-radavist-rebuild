@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-//import { HttpModule } from '@angular/http';
+import { HttpClientModule } from "@angular/common/http";
 import { routing } from "./app.routing";
 //import { masterFirebaseConfig } from './api-keys';
 //import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -35,9 +35,9 @@ import { ShopComponent } from "./shop/shop.component";
   // Add modules to the imports.
   imports: [
     BrowserModule,
-    routing,
-    FormsModule
-    //HttpModule,
+    FormsModule,
+    HttpClientModule,
+    routing
     //AngularFireModule.initializeApp(firebaseConfig),
     //AngularFireDatabaseModule
   ],

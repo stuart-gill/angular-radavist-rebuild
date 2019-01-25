@@ -1,5 +1,6 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+
 // Import Components to add to the router.
 import { ExampleComponent } from "./example/example.component";
 import { AboutComponent } from "./about/about.component";
