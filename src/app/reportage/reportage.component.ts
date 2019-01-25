@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Report } from "../report.model";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-reportage",
@@ -7,6 +8,8 @@ import { Report } from "../report.model";
   styleUrls: ["./reportage.component.css"]
 })
 export class ReportageComponent implements OnInit {
+  constructor(private router: Router) {}
+
   reports: Report[] = [
     new Report("Title", "Author", "ReportText", 1),
     new Report(
@@ -28,6 +31,10 @@ export class ReportageComponent implements OnInit {
       4
     )
   ];
+
+  goToDetailPage(clickedReport: Report) {
+    this.router.navigate(["reports", clickedReport.id]);
+  }
 
   ngOnInit() {}
 }

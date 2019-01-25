@@ -8,9 +8,9 @@ import { RadarComponent } from "./radar/radar.component";
 import { ReportageComponent } from "./reportage/reportage.component";
 import { ShopComponent } from "./shop/shop.component";
 import { VideosComponent } from "./videos/videos.component";
+import { ReportageDetailComponent } from "./reportage-detail/reportage-detail.component";
 
 const appRoutes: Routes = [
-  //An example route
   {
     path: "",
     component: ExampleComponent
@@ -26,6 +26,10 @@ const appRoutes: Routes = [
   {
     path: "reportage",
     component: ReportageComponent
+  },
+  {
+    path: "reportage/:id",
+    component: ReportageDetailComponent
   },
   {
     path: "shop",

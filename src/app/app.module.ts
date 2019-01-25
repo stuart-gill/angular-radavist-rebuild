@@ -13,6 +13,7 @@ import { ReportageComponent } from "./reportage/reportage.component";
 import { RadarComponent } from "./radar/radar.component";
 import { VideosComponent } from "./videos/videos.component";
 import { ShopComponent } from "./shop/shop.component";
+import { ReportageDetailComponent } from "./reportage-detail/reportage-detail.component";
 
 // export const firebaseConfig = {
 //   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ import { ShopComponent } from "./shop/shop.component";
     ReportageComponent,
     RadarComponent,
     VideosComponent,
-    ShopComponent
+    ShopComponent,
+    ReportageDetailComponent
   ],
 
   // Add modules to the imports.

@@ -1,6 +1,10 @@
 <h2>Reportage</h2>
 
-<div *ngFor="let report of reports" class="card card-default">
+<div
+  *ngFor="let report of reports"
+  (click)="goToDetailPage(report)"
+  class="card card-default"
+>
   <div class="card-body">
     <h3>
       <em>{{ report.title }}</em> by {{ report.author }}
