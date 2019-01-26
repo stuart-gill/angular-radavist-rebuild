@@ -11,4 +11,12 @@ export class ReportService {
   getReports() {
     return REPORTS;
   }
+
+  getReportById(reportId: number) {
+    for (var i = 0; i <= REPORTS.length - 1; i++) {
+      if (REPORTS[i].id === reportId) {
+        return REPORTS[i];
+      }
+    }
+  }
 }

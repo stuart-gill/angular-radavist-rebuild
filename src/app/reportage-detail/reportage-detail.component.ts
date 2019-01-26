@@ -2,20 +2,28 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Params } from "@angular/router";
 import { Location } from "@angular/common";
 import { Report } from "../report.model";
+import { ReportService } from "../report.service";
 
 @Component({
   selector: "app-reportage-detail",
   templateUrl: "./reportage-detail.component.html",
-  styleUrls: ["./reportage-detail.component.css"]
+  styleUrls: ["./reportage-detail.component.css"],
+  providers: [ReportService]
 })
 export class ReportageDetailComponent implements OnInit {
-  reportId: number = null;
+  reportId: number;
+  reportToDisplay: Report;
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private reportService: ReportService
+  ) {}
 
   ngOnInit() {
     this.route.params.forEach(urlParameters => {
       this.reportId = parseInt(urlParameters["id"]);
     });
+    this.reportToDisplay = this.reportService.getReportById(this.reportId);
   }
 }
