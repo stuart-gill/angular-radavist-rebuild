@@ -1,40 +1,24 @@
 import { Component, OnInit } from "@angular/core";
 import { Report } from "../report.model";
 import { Router } from "@angular/router";
+import { ReportService } from "../report.service";
 
 @Component({
   selector: "app-reportage",
   templateUrl: "./reportage.component.html",
-  styleUrls: ["./reportage.component.css"]
+  styleUrls: ["./reportage.component.css"],
+  providers: [ReportService]
 })
 export class ReportageComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private reportService: ReportService) {}
 
-  reports: Report[] = [
-    new Report("Title", "Author", "ReportText", 1),
-    new Report(
-      "Dispatches from the Veld: On the Road to the Pontchâteau World Cup",
-      "Andrew Juiliano",
-      "This articles text",
-      2
-    ),
-    new Report(
-      "Shared Territory: Iceland",
-      "Ian Matteson",
-      "Iceland story text",
-      3
-    ),
-    new Report(
-      "Capability and Affordability with the Cannondale Topstone All Road",
-      "",
-      "Cannondale article text",
-      4
-    )
-  ];
+  reports: Report[];
 
   goToDetailPage(clickedReport: Report) {
     this.router.navigate(["reportage", clickedReport.id]);
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.reports = this.reportService.getReports();
+  }
 }
