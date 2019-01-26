@@ -1,6 +1,7 @@
 # _Angular Rebuild of TheRadavist.com_
 
-#### _A standard angular boilerplate setup with dynamic routing implemented.
+#### \_An attempt to reproduce TheRadavist.com, using Angular and processes like dynamic routing, service injection, firebase database, and components.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
 #### By _**Stuart Gill**_
@@ -8,10 +9,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -29,9 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
 ### License
 
-*MIT License*
+_MIT License_
 
 Copyright (c) 2019 **_Stuart Gill_**
