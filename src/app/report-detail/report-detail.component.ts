@@ -6,9 +6,9 @@ import { ReportService } from "../report.service";
 import { FirebaseObjectObservable } from "angularfire2/database";
 
 @Component({
-  selector: "app-reportage-detail",
-  templateUrl: "./reportage-detail.component.html",
-  styleUrls: ["./reportage-detail.component.css"],
+  selector: "app-report-detail",
+  templateUrl: "./report-detail.component.html",
+  styleUrls: ["./report-detail.component.css"],
   providers: [ReportService]
 })
 export class ReportDetailComponent implements OnInit {

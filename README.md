@@ -26,6 +26,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Known Bugs
+
+If you have RxJS errors when compiling, try entering the following in CLI to cirucmvent compatability issues.
+
+```
+npm install -s rxjs-compat
+```
+
 ## API Keys
 
 Create the file: src/app/api-keys.ts. Then plug this block of code into it, replacing all the 'x's with your own Firebase credentials:

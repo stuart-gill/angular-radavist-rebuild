@@ -2,7 +2,6 @@ import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 // Import Components to add to the router.
-import { ExampleComponent } from "./example/example.component";
 import { AboutComponent } from "./about/about.component";
 import { RadarComponent } from "./radar/radar.component";
 import { ReportageComponent } from "./reportage/reportage.component";
@@ -12,10 +11,6 @@ import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { AdminComponent } from "./admin/admin.component";
 
 const appRoutes: Routes = [
-  {
-    path: "",
-    component: ExampleComponent
-  },
   {
     path: "about",
     component: AboutComponent

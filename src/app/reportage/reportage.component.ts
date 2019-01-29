@@ -20,7 +20,7 @@ export class ReportageComponent implements OnInit {
     this.reports = this.reportService.getReports();
   }
 
-  goToDetailPage(clickedReport: Report) {
+  goToDetailPage(clickedReport) {
     this.router.navigate(["reports", clickedReport.$key]);
   }
 }

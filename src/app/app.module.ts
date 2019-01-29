@@ -7,13 +7,12 @@ import { masterFirebaseConfig } from "./api-keys";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { AngularFireModule } from "angularfire2";
 import { AppComponent } from "./app.component";
-import { ExampleComponent } from "./example/example.component";
 import { AboutComponent } from "./about/about.component";
 import { ReportageComponent } from "./reportage/reportage.component";
 import { RadarComponent } from "./radar/radar.component";
 import { VideosComponent } from "./videos/videos.component";
 import { ShopComponent } from "./shop/shop.component";
-import { ReportageDetailComponent } from "./reportage-detail/reportage-detail.component";
+import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { AdminComponent } from "./admin/admin.component";
 // import { EditReportComponent } from './edit-report/edit-report.component';
 
@@ -27,13 +26,12 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent,
     AboutComponent,
     ReportageComponent,
     RadarComponent,
     VideosComponent,
     ShopComponent,
-    ReportageDetailComponent,
+    ReportDetailComponent,
     AdminComponent
   ],
 
