@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from "@angular/router";
 import { Location } from "@angular/common";
 import { Report } from "../report.model";
 import { ReportService } from "../report.service";
+import { FirebaseObjectObservable } from "angularfire2/database";
 
 @Component({
   selector: "app-reportage-detail",
@@ -11,8 +12,8 @@ import { ReportService } from "../report.service";
   providers: [ReportService]
 })
 export class ReportageDetailComponent implements OnInit {
-  reportId: number;
-  reportToDisplay: Report;
+  reportId: string;
+  reportToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,7 +23,7 @@ export class ReportageDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach(urlParameters => {
-      this.reportId = parseInt(urlParameters["id"]);
+      this.reportId = urlParameters["id"];
     });
     this.reportToDisplay = this.reportService.getReportById(this.reportId);
   }

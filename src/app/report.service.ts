@@ -1,22 +1,42 @@
 import { Injectable } from "@angular/core";
 import { Report } from "./report.model";
-import { REPORTS } from "./mock-reports";
 
-@Injectable({
-  providedIn: "root"
-})
+import {
+  AngularFireDatabase,
+  FirebaseListObservable
+} from "angularfire2/database";
+
+@Injectable()
 export class ReportService {
-  constructor() {}
+  reports: FirebaseListObservable<any[]>;
 
-  getReports() {
-    return REPORTS;
+  constructor(private database: AngularFireDatabase) {
+    this.reports = database.list("reports");
   }
 
-  getReportById(reportId: number) {
-    for (var i = 0; i <= REPORTS.length - 1; i++) {
-      if (REPORTS[i].id === reportId) {
-        return REPORTS[i];
-      }
-    }
+  getReports() {
+    return this.reports;
+  }
+
+  addReport(newReport: Report) {
+    this.reports.push(newReport);
+  }
+
+  getReportById(reportId: string) {
+    return this.database.object("/reports/" + reportId);
+  }
+
+  updateReport(localUpdatedReport) {
+    var reportEntryInFirebase = this.getReportById(localUpdatedReport.$key);
+    reportEntryInFirebase.update({
+      title: localUpdatedReport.title,
+      author: localUpdatedReport.artist,
+      reportText: localUpdatedReport.description
+    });
+  }
+
+  deleteReport(localReportToDelete) {
+    var reportEntryInFirebase = this.getReportById(localReportToDelete.$key);
+    reportEntryInFirebase.remove();
   }
 }

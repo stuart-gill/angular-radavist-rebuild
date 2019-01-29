@@ -1,0 +1,19 @@
+{
+  "reportage": [
+    {
+      "title": " Piper At The Gates of Dawn",
+      "author": "Pink Floyd",
+      "reportText": "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom."
+    },
+    {
+      "title": "Dilate",
+      "author": "Ani DiFranco",
+      "reportText": "Her highest-selling and most acclaimed album, released in 1996."
+    },
+    {
+      "title": "Axis Bold As Love",
+      "author": "Jimi Hendrix",
+      "reportText": "Second studio album by the English-American band, released in 1967."
+    }
+  ]
+}
