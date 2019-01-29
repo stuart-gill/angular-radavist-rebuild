@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Report } from "../report.model";
 import { Router } from "@angular/router";
 import { ReportService } from "../report.service";
+import { FirebaseListObservable } from "angularfire2/database";
 
 @Component({
   selector: "app-reportage",
@@ -10,15 +11,16 @@ import { ReportService } from "../report.service";
   providers: [ReportService]
 })
 export class ReportageComponent implements OnInit {
+  reports: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private reportService: ReportService) {}
-
-  reports: Report[];
-
-  goToDetailPage(clickedReport: Report) {
-    this.router.navigate(["reportage", clickedReport.id]);
-  }
 
   ngOnInit() {
     this.reports = this.reportService.getReports();
+  }
+
+  goToDetailPage(clickedReport: Report) {
+    this.router.navigate(["reports", clickedReport.$key]);
   }
 }

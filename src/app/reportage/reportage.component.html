@@ -1,13 +1,21 @@
 <h2>Reportage</h2>
 
-<div
-  *ngFor="let report of reports"
-  (click)="goToDetailPage(report)"
-  class="card card-default"
->
+<div *ngFor="let report of (reports | async)" class="card card-default">
   <div class="card-body">
-    <h3>
+    <h3 (click)="goToDetailPage(report)">
       <em>{{ report.title }}</em> by {{ report.author }}
     </h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{ report.reportText }}
+      <app-edit-report [selectedReport]="report"></app-edit-report>
+    </div>
   </div>
 </div>
+
+<!-- <h2>Reportage</h2>
+
+<div *ngFor="let report of reports | async" (click)="goToDetailPage(report)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{report.title}}</em> by {{report.author}}</h3>
+  </div>
+</div> -->
