@@ -8,7 +8,8 @@ import { RadarComponent } from "./radar/radar.component";
 import { ReportageComponent } from "./reportage/reportage.component";
 import { ShopComponent } from "./shop/shop.component";
 import { VideosComponent } from "./videos/videos.component";
-import { ReportageDetailComponent } from "./reportage-detail/reportage-detail.component";
+import { ReportDetailComponent } from "./report-detail/report-detail.component";
+import { AdminComponent } from "./admin/admin.component";
 
 const appRoutes: Routes = [
   {
@@ -28,8 +29,8 @@ const appRoutes: Routes = [
     component: ReportageComponent
   },
   {
-    path: "reportage/:id",
-    component: ReportageDetailComponent
+    path: "report/:id",
+    component: ReportDetailComponent
   },
   {
     path: "shop",
@@ -38,6 +39,10 @@ const appRoutes: Routes = [
   {
     path: "videos",
     component: VideosComponent
+  },
+  {
+    path: "admin",
+    component: AdminComponent
   }
 ];
 

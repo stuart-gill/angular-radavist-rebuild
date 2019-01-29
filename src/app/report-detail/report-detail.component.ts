@@ -11,7 +11,7 @@ import { FirebaseObjectObservable } from "angularfire2/database";
   styleUrls: ["./reportage-detail.component.css"],
   providers: [ReportService]
 })
-export class ReportageDetailComponent implements OnInit {
+export class ReportDetailComponent implements OnInit {
   reportId: string;
   reportToDisplay;
 

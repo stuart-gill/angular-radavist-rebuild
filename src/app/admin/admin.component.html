@@ -1,0 +1,37 @@
+<div class="card card-default">
+  <div class="card-heading">
+    <h3 class="card-title">Add New Report to Inventory</h3>
+  </div>
+  <div class="card-body">
+    <div>
+      <div>
+        <label>Report Title:</label> <br />
+        <input #newTitle />
+      </div>
+
+      <div>
+        <label>Report Author:</label> <br />
+        <input #newAuthor />
+      </div>
+
+      <div>
+        <label>Report Text:</label> <br />
+        <textarea #newReportText></textarea>
+      </div>
+      <button
+        (click)="
+          submitForm(newTitle.value, newAuthor.value, newReportText.value);
+          newTitle.value = '';
+          newAuthor.value = '';
+          newReportText.value = ''
+        "
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-reportage></app-reportage>
+</div>
