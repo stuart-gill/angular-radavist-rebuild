@@ -14,6 +14,7 @@ import { VideosComponent } from "./videos/videos.component";
 import { ShopComponent } from "./shop/shop.component";
 import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { AdminComponent } from "./admin/admin.component";
+import { EditReportComponent } from "./edit-report/edit-report.component";
 // import { EditReportComponent } from './edit-report/edit-report.component';
 
 export const firebaseConfig = {
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     VideosComponent,
     ShopComponent,
     ReportDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditReportComponent
   ],
 
   // Add modules to the imports.

@@ -30,8 +30,8 @@ export class ReportService {
     var reportEntryInFirebase = this.getReportById(localUpdatedReport.$key);
     reportEntryInFirebase.update({
       title: localUpdatedReport.title,
-      author: localUpdatedReport.artist,
-      reportText: localUpdatedReport.description
+      author: localUpdatedReport.author,
+      reportText: localUpdatedReport.reportText
     });
   }
 

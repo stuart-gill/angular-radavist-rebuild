@@ -1,0 +1,14 @@
+<h4>Edit Report</h4>
+
+<label>New Report Title:</label>
+<input [(ngModel)]="selectedReport.title" />
+<br />
+
+<label>New Report Author:</label>
+<input [(ngModel)]="selectedReport.author" />
+<br />
+
+<label>New Report Text:</label>
+<input [(ngModel)]="selectedReport.reportText" />
+
+<button (click)="beginUpdatingReport(selectedReport)">Update</button>
