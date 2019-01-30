@@ -24,7 +24,7 @@ const appRoutes: Routes = [
     component: ReportageComponent
   },
   {
-    path: "report/:id",
+    path: "reports/:id",
     component: ReportDetailComponent
   },
   {

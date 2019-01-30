@@ -13,8 +13,8 @@ export class AdminComponent implements OnInit {
 
   ngOnInit() {}
 
-  submitForm(title: string, artist: string, reportText: string) {
-    var newReport: Report = new Report(title, artist, reportText);
+  submitForm(title: string, author: string, reportText: string) {
+    var newReport: Report = new Report(title, author, reportText);
     this.reportService.addReport(newReport);
   }
 }
