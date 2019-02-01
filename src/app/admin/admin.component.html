@@ -26,7 +26,12 @@
 
       <button
         (click)="
-          submitForm(newTitle.value, newAuthor.value, newReportText.value);
+          submitForm(
+            newTitle.value,
+            newAuthor.value,
+            newReportText.value,
+            newPhotos.value
+          );
           newTitle.value = '';
           newAuthor.value = '';
           newReportText.value = '';
