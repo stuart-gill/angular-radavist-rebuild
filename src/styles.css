@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -5,4 +7,22 @@
   height: 60px;
   background-color: #f5f5f5;
   padding: 15px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  font-family: "WoolworthBoldRegular";
+  background-image: url(https://1k8v1j48qpy31xwzwlyhyn9p-wpengine.netdna-ssl.com/wp-content/themes/radavist/inc/img/newhead.jpg);
+  height: 50px;
+  border-top: 2px solid #d83729;
+}
+
+#logo {
+  display: inline-block;
+  width: 104px;
+  opacity: 1;
 }

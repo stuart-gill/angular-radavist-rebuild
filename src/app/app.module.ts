@@ -15,6 +15,7 @@ import { ShopComponent } from "./shop/shop.component";
 import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { AdminComponent } from "./admin/admin.component";
 import { EditReportComponent } from "./edit-report/edit-report.component";
+
 // import { EditReportComponent } from './edit-report/edit-report.component';
 
 export const firebaseConfig = {
