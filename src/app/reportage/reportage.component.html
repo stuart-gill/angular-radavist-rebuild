@@ -7,6 +7,7 @@
     </h3>
     <div *ngIf="currentRoute === '/admin'">
       {{ report.reportText }}
+      {{ report.photos }}
       <app-edit-report [selectedReport]="report"></app-edit-report>
     </div>
   </div>

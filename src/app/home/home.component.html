@@ -4,3 +4,12 @@
   <div class="reportage-mast-center"></div>
   <div class="reportage-mast-right"></div>
 </div>
+
+<div *ngFor="let report of (reports | async)">
+  <br />
+  <h3 (click)="goToDetailPage(report)">
+    <em>{{ report.title }}</em> -- {{ report.author }}
+  </h3>
+  <br />
+  <img class="responsive" src="{{ report.photos }}" />
+</div>
