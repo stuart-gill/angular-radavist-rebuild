@@ -18,12 +18,19 @@
         <label>Report Text:</label> <br />
         <textarea #newReportText></textarea>
       </div>
+
+      <div>
+        <label>Report Photo Links:</label> <br />
+        <textarea #newPhotos></textarea>
+      </div>
+
       <button
         (click)="
           submitForm(newTitle.value, newAuthor.value, newReportText.value);
           newTitle.value = '';
           newAuthor.value = '';
-          newReportText.value = ''
+          newReportText.value = '';
+          newPhotos.value = ''
         "
       >
         Add

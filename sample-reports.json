@@ -1,19 +1,22 @@
 {
   "reports": [
     {
-      "title": " Piper At The Gates of Dawn",
-      "author": "Pink Floyd",
-      "reportText": "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom."
+      "title": " This report is awesome",
+      "author": "John Watson",
+      "reportText": "woah what a bike!",
+      "photos": "photo link for awesome report"
     },
     {
-      "title": "Dilate",
-      "author": "Ani DiFranco",
-      "reportText": "Her highest-selling and most acclaimed album, released in 1996."
+      "title": "another great repot",
+      "author": "John Watson",
+      "reportText": "this bike so sick",
+      "photos": "photo link for second report"
     },
     {
-      "title": "Axis Bold As Love",
-      "author": "Jimi Hendrix",
-      "reportText": "Second studio album by the English-American band, released in 1967."
+      "title": "the insane report",
+      "author": "Jimmy John",
+      "reportText": "Wow cool bike.",
+      "photos": "photo link for third report"
     }
   ]
 }

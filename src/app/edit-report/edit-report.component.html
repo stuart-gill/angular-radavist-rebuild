@@ -11,6 +11,9 @@
 <label>New Report Text:</label>
 <input [(ngModel)]="selectedReport.reportText" />
 
+<label>New Report Photos:</label>
+<input [(ngModel)]="selectedReport.photos" />
+
 <button (click)="beginUpdatingReport(selectedReport)">Update</button>
 
 <button (click)="beginDeletingReport(selectedReport)">Delete</button>

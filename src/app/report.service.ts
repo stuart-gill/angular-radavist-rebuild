@@ -31,7 +31,8 @@ export class ReportService {
     reportEntryInFirebase.update({
       title: localUpdatedReport.title,
       author: localUpdatedReport.author,
-      reportText: localUpdatedReport.reportText
+      reportText: localUpdatedReport.reportText,
+      photos: localUpdatedReport.photos
     });
   }
 
