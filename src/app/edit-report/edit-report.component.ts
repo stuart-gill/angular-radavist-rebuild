@@ -18,4 +18,11 @@ export class EditReportComponent implements OnInit {
   beginUpdatingReport(reportToUpdate) {
     this.reportService.updateReport(reportToUpdate);
   }
+
+  //actual delete function is deleteReport, called here and defined in report.service
+  beginDeletingReport(reportToDelete) {
+    if (confirm("Are you sure you want to delete this report?")) {
+      this.reportService.deleteReport(reportToDelete);
+    }
+  }
 }
