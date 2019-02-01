@@ -9,8 +9,13 @@ import { ShopComponent } from "./shop/shop.component";
 import { VideosComponent } from "./videos/videos.component";
 import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { AdminComponent } from "./admin/admin.component";
+import { HomeComponent } from "./home/home.component";
 
 const appRoutes: Routes = [
+  {
+    path: "home",
+    component: HomeComponent
+  },
   {
     path: "about",
     component: AboutComponent

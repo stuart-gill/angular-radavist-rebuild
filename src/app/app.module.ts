@@ -15,6 +15,7 @@ import { ShopComponent } from "./shop/shop.component";
 import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { AdminComponent } from "./admin/admin.component";
 import { EditReportComponent } from "./edit-report/edit-report.component";
+import { HomeComponent } from "./home/home.component";
 
 // import { EditReportComponent } from './edit-report/edit-report.component';
 
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     ShopComponent,
     ReportDetailComponent,
     AdminComponent,
-    EditReportComponent
+    EditReportComponent,
+    HomeComponent
   ],
 
   // Add modules to the imports.

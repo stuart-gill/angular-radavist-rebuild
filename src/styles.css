@@ -19,10 +19,30 @@
   background-image: url(https://1k8v1j48qpy31xwzwlyhyn9p-wpengine.netdna-ssl.com/wp-content/themes/radavist/inc/img/newhead.jpg);
   height: 50px;
   border-top: 2px solid #d83729;
+  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(45, 42, 48, 0.7);
+  -moz-box-shadow: 0 1px 1px rgba(45, 42, 48, 0.7);
+  box-shadow: 0 1px 1px rgba(45, 42, 48, 0.7);
 }
 
 #logo {
   display: inline-block;
   width: 104px;
   opacity: 1;
+}
+
+body {
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+#mainRouter {
+  margin-top: 55px;
 }
