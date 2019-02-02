@@ -1,6 +1,15 @@
 # _Angular Rebuild of TheRadavist.com_
 
-#### \_An attempt to reproduce TheRadavist.com, using Angular and processes like dynamic routing, service injection, firebase database, and components.
+#### \An attempt to reproduce TheRadavist.com, using Angular and processes like dynamic routing, service injection, firebase database, and components.
+
+-Click on "the Radavist" logo in header to be taken to /home route
+-Home route is a list of Reports, showing only the title, author, and one image. Home route will eventually also have Radar components on the left of the page, and advertisements on the right.
+-Click on the title of the report to go to the report detail page, which shows all photos (feature not yet implemented) and full text of report
+-Clicking "Reportage" in the nav bar header will take you to a list of reports with titles and authors only. Also clickable.
+-The Radar route (in nav bar) has not yet been built out, nor has the radar component been built.
+-Ditto for shop and video components and routes
+-About component has its content built, and is displayed in the about route, but needs further formatting
+-Clicking Admin at the footer nav bar takes you to the admin route, which brings up a "New Report" form with spots to enter report details and photos, as well as a list of reports and forms that allow for editing all aspects of each report
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
