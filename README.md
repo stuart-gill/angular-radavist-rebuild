@@ -1,6 +1,6 @@
 # _Angular Rebuild of TheRadavist.com_
 
-#### \An attempt to reproduce TheRadavist.com, using Angular and processes like dynamic routing, service injection, firebase database, and components.
+#### An attempt to reproduce TheRadavist.com, using Angular and processes like dynamic routing, service injection, firebase database, and components.
 
 -Click on "the Radavist" logo in header to be taken to /home route
 -Home route is a list of Reports, showing only the title, author, and one image. Home route will eventually also have Radar components on the left of the page, and advertisements on the right.
